@@ -1,0 +1,6 @@
+services:
+  staqtype:
+    image: ghcr.io/vitlixe/staqtype:${STAQTYPE_VERSION:-latest}
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
